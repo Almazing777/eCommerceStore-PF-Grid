@@ -1,0 +1,44 @@
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
+public class BaseTest {
+    WebDriver driver;
+   // WebDriverWait wait;
+
+//    public static final String USERNAME = "al777";
+//    public static final String ACCESS_KEY = "f841db02-4935-4f12-9d4c-af0b690b6ddb";
+//    public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@hub-cloud.browserstack.com:80/wd/hub";
+
+    @BeforeMethod
+    public void setUp() throws MalformedURLException {
+        driver = new ChromeDriver();
+        driver.get("https://test.woahstork.com/");
+//        driver.manage().window().maximize();
+//        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+//        DesiredCapabilities caps = DesiredCapabilities.firefox();
+//        caps.setCapability("platform", Platform.WIN10);
+//        caps.setCapability("version", "77.0");
+//
+//        driver = new RemoteWebDriver(new URL(URL), caps);
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.manage().window().maximize();
+//        wait = new WebDriverWait(driver,10);
+    }
+
+
+    @AfterMethod
+    public void tearDown(){
+        driver.quit();
+    }
+}
