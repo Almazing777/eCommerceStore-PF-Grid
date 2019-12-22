@@ -9,7 +9,7 @@
 
             <class name="HomePageTests"/>
             <class name="PLPTests"/>
-
+            <class name="CucumberRunner"/>
         </classes>
     </test>
 </suite>

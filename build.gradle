@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group '1'
+group 'testpro.woahstork'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -13,14 +13,17 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
-    // https://mvnrepository.com/artifact/org.testng/testng
     testCompile group: 'org.testng', name: 'testng', version: '7.0.0'
+    testCompile 'com.codeborne:selenide:5.5.1'
+
+    testCompile 'io.cucumber:gherkin:5.1.0'
+    testCompile 'io.cucumber:cucumber-core:3.0.2'
+    testCompile 'io.cucumber:cucumber-java:3.0.2'
+    testCompile 'io.cucumber:cucumber-testng:3.0.2'
 
 
 }
-
 
 test {
     useTestNG() {

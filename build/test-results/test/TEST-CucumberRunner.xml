@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CucumberRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-22T01:49:11" hostname="Almass-MBP.fios-router.home" time="3.299">
+  <properties/>
+  <testcase name="scenario[0](&quot;Existing user sign up&quot;, &quot;Sign up Feature&quot;)" classname="CucumberRunner" time="3.299"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}) on port 35088
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1576979353.079][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
+Dec 21, 2019 5:49:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
