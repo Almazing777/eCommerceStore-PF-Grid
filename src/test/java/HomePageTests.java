@@ -8,9 +8,22 @@ import org.testng.annotations.Test;
 public class HomePageTests  extends  BaseTest {
 
     @Test
-    public void getVerifiedTest () {
+    public void GetVerifiedTest () {
 
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
+
+        homePage.openHomePage();
+        homePage.clickGetVerifiedIcon();
+
+        WebElement welcomeBack = homePage.getWelcomeBackElement();
+        Assert.assertTrue(welcomeBack.isDisplayed());
+
+    }
+
+    @Test
+    public void GetVerifiedTest2 () {
+
+        HomePage homePage = new HomePage(getDriver());
 
         homePage.openHomePage();
         homePage.clickGetVerifiedIcon();

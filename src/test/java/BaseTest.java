@@ -12,17 +12,40 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
-    WebDriver driver;
+    //    WebDriver driver;
     WebDriverWait wait;
+
+    ThreadLocal<RemoteWebDriver> threadDriver;
 
     @BeforeMethod
     public void beforeMethodSetup() throws MalformedURLException {
-        String nodeURL = "http://localhost:4444/";
-        DesiredCapabilities caps = DesiredCapabilities.firefox();
-        driver = new RemoteWebDriver(new URL(nodeURL), caps);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 4);
-        driver.get("https://deens-master.now.sh/login");
+
+        threadDriver = new ThreadLocal<RemoteWebDriver>();
+
+        DesiredCapabilities dc = new DesiredCapabilities();
+        switch (System.getProperty("browser")) {
+            case "safari":
+                dc.setBrowserName(DesiredCapabilities.safari().getBrowserName());
+                break;
+            case "chrome":
+                dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+                break;
+            case "firefox":
+                dc.setBrowserName(DesiredCapabilities.firefox().getBrowserName());
+                break;
+            default:
+                dc.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+        }
+
+        dc.setPlatform(Platform.MAC);
+
+
+        threadDriver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), dc));
+        wait = new WebDriverWait(getDriver(),20);
+    }
+
+    public WebDriver getDriver() {
+        return threadDriver.get();
     }
 
 //
@@ -36,8 +59,7 @@ public class BaseTest {
 
 
     @AfterMethod
-    public void tearDown(){
-        driver.quit();
+    public void tearDown() {
+        getDriver().quit();
     }
 }
-

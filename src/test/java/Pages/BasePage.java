@@ -14,7 +14,7 @@ class BasePage {
 
     public BasePage(WebDriver myDriver) {
         this.driver = myDriver;
-        wait = new WebDriverWait(driver,4);
+        wait = new WebDriverWait(driver,10);
     }
 
     protected WebElement findElement(String cssLocator) {

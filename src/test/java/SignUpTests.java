@@ -1,5 +1,5 @@
-
 import Pages.HomePage;
+import Pages.PLPPage;
 import Pages.SignUpPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,56 +7,63 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static Pages.SignUpPage.getRandomEmail;
+import java.sql.Timestamp;
 
-public class SignUpTests extends BaseTest{
+public class SignUpTests extends  BaseTest {
 
-    @Test
-    public void signUpSuccess() {
 
-        SignUpPage signUpPage = new SignUpPage(driver);
 
-        signUpPage.getPage();
-        signUpPage.setEmailField(getRandomEmail());
-        signUpPage.setPassword("incorrectPassword");
-        signUpPage.setConfirmPassword("incorrectPassword");
-        signUpPage.setZipCode("90020");
-        signUpPage.clickCheckboxTermsAndConditions();
-        signUpPage.clickCheckboxHIPAA();
-        signUpPage.clickToSignUp();
-        signUpPage.assertAndFindPhoneNumber();
-    }
+    @Test(priority = 1)
+    public void SignUpSuccessTest () {
 
-    @Test
-    public void signUpWrongEmail() {
-        SignUpPage signUpPage = new SignUpPage(driver);
-        signUpPage.getPage();
-        signUpPage.setEmailField("gmail.com");
-        signUpPage.setPassword("incorrectPassword");
-        signUpPage.setConfirmPassword("setConfirmPassword");
-        signUpPage.setZipCode("90020");
-        signUpPage.clickCheckboxTermsAndConditions();
-        signUpPage.clickCheckboxHIPAA();
-        signUpPage.clickToSignUp();
+        SignUpPage signUpPage = new SignUpPage(getDriver());
 
-        signUpPage.assertErrorElement();
+        signUpPage.openSignUpPage();
+
+        signUpPage.setEmailField(signUpPage.getRandomEmail());
+
+        signUpPage.setPasswordField("incorrectPassword");
+//        signUpPage.setUserName(signUpPage.getRandomUsername());
+        signUpPage.clickToLoginButton();
+//        signUpPage.setConfirmPasswordField("incorrectPassword");
+//        signUpPage.setZipCode("90066");
+//
+//        signUpPage.clickCheckboxTermsAndConditions();
+//        signUpPage.clickCheckboxHIPAA();
+//
+//        HomePage homePage = signUpPage.clickToLoginButton();
+//        WebElement phoneNumber = signUpPage.getPhoneNumberElement(); //driver.findElement(By.cssSelector("[label=\"Your Phone Number\"]"));
+//
+//        Assert.assertTrue(phoneNumber.isDisplayed());
 
     }
 
-    @Test
-    public void signUpEmptyCredentials(){
-        SignUpPage signUpPage = new SignUpPage(driver);
-        signUpPage.getPage();
-        signUpPage.setWrongEmailField("");
-        signUpPage.setPassword("");
-        signUpPage.setConfirmPassword("");
-        signUpPage.setZipCode("");
+    @Test(priority = 1)
+    public void SignUpSuccessTest2 () {
 
-        signUpPage.clickCheckboxTermsAndConditions();
-        signUpPage.clickCheckboxHIPAA();
-        signUpPage.assertSignUpButtonVisible();
+        SignUpPage signUpPage = new SignUpPage(getDriver());
 
+        signUpPage.openSignUpPage();
 
+        signUpPage.setEmailField(signUpPage.getRandomEmail());
+
+        signUpPage.setPasswordField("incorrectPassword");
+//        signUpPage.setUserName(signUpPage.getRandomUsername());
+        signUpPage.clickToLoginButton();
+//        signUpPage.setConfirmPasswordField("incorrectPassword");
+//        signUpPage.setZipCode("90066");
+//
+//        signUpPage.clickCheckboxTermsAndConditions();
+//        signUpPage.clickCheckboxHIPAA();
+//
+//        HomePage homePage = signUpPage.clickToLoginButton();
+//        WebElement phoneNumber = signUpPage.getPhoneNumberElement(); //driver.findElement(By.cssSelector("[label=\"Your Phone Number\"]"));
+//
+//        Assert.assertTrue(phoneNumber.isDisplayed());
 
     }
+
+
+
+
 }

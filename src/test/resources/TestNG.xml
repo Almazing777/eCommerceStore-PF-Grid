@@ -5,23 +5,10 @@
 
     <test name="Smoke Test" preserve-order="false">
         <classes>
-            <class name="SignUpTests">
-                <methods>
-                    <include name="signUpSuccess" />
-                    <include name="signUpWrongEmail" />
-                    <include name="signUpEmptyCredentials" />
-                </methods>
-            </class>
-            <class name="HomePageTests">
-                <methods>
-                    <include name="getVerifiedTest" />
-                </methods>
-            </class>
-            <class name="PLPTests">
-                <methods>
-                    <include name="signUpSuccessTest" />
-                </methods>
-            </class>
+            <class name="SignUpTests"/>
+
+            <class name="HomePageTests"/>
+            <class name="PLPTests"/>
 
         </classes>
     </test>
