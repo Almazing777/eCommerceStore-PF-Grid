@@ -13,28 +13,26 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
     WebDriver driver;
-   // WebDriverWait wait;
-
-//    public static final String USERNAME = "al777";
-//    public static final String ACCESS_KEY = "f841db02-4935-4f12-9d4c-af0b690b6ddb";
-//    public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@hub-cloud.browserstack.com:80/wd/hub";
+    WebDriverWait wait;
 
     @BeforeMethod
-    public void setUp() throws MalformedURLException {
-        driver = new ChromeDriver();
-        driver.get("https://test.woahstork.com/");
+    public void beforeMethodSetup() throws MalformedURLException {
+        String nodeURL = "http://localhost:4444/";
+        DesiredCapabilities caps = DesiredCapabilities.firefox();
+        driver = new RemoteWebDriver(new URL(nodeURL), caps);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver, 4);
+        driver.get("https://deens-master.now.sh/login");
+    }
+
+//
+//
+//        driver = new ChromeDriver();
+//        driver.get("https://deens-master.now.sh/login");
 //        driver.manage().window().maximize();
 //        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-//        DesiredCapabilities caps = DesiredCapabilities.firefox();
-//        caps.setCapability("platform", Platform.WIN10);
-//        caps.setCapability("version", "77.0");
 //
-//        driver = new RemoteWebDriver(new URL(URL), caps);
-//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        driver.manage().window().maximize();
-//        wait = new WebDriverWait(driver,10);
-    }
+
 
 
     @AfterMethod
@@ -42,3 +40,4 @@ public class BaseTest {
         driver.quit();
     }
 }
+

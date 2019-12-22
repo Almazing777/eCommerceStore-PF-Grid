@@ -23,7 +23,7 @@ public class HomePage extends BasePage {
 
 
     public void openHomePage() {
-        driver.get("https://test.woahstork.com/");
+        driver.get("https://deens-master.now.sh/login");
     }
 
 
