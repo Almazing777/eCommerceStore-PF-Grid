@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f26055d-45e5-4d79-a10e-af812e21c2ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/HomePageTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/HomePageTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/PLPTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/PLPTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Pages/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Pages/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Pages/SignUpPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/Pages/SignUpPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/SignUpTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/SignUpTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/SignUpTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-SignUpTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PLPTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PLPTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SignUpTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignUpTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +14,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,22 +206,22 @@
       <screen x="0" y="23" width="1680" height="976" />
     </state>
     <state x="326" y="221" key="#com.intellij.ide.util.MemberChooser/0.23.1680.976@0.23.1680.976" timestamp="1576119547928" />
-    <state width="905" height="250" key="GridCell.Tab.0.bottom" timestamp="1576978258257">
+    <state width="905" height="250" key="GridCell.Tab.0.bottom" timestamp="1576978350630">
       <screen x="0" y="23" width="1680" height="976" />
     </state>
-    <state width="905" height="250" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1576978258257" />
-    <state width="905" height="250" key="GridCell.Tab.0.center" timestamp="1576978258256">
+    <state width="905" height="250" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1576978350630" />
+    <state width="905" height="250" key="GridCell.Tab.0.center" timestamp="1576978350629">
       <screen x="0" y="23" width="1680" height="976" />
     </state>
-    <state width="905" height="250" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1576978258256" />
-    <state width="905" height="250" key="GridCell.Tab.0.left" timestamp="1576978258256">
+    <state width="905" height="250" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1576978350629" />
+    <state width="905" height="250" key="GridCell.Tab.0.left" timestamp="1576978350629">
       <screen x="0" y="23" width="1680" height="976" />
     </state>
-    <state width="905" height="250" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1576978258256" />
-    <state width="905" height="250" key="GridCell.Tab.0.right" timestamp="1576978258256">
+    <state width="905" height="250" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1576978350629" />
+    <state width="905" height="250" key="GridCell.Tab.0.right" timestamp="1576978350630">
       <screen x="0" y="23" width="1680" height="976" />
     </state>
-    <state width="905" height="250" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1576978258256" />
+    <state width="905" height="250" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1576978350630" />
     <state x="19" y="254" key="IDE.errors.dialog" timestamp="1576123776167">
       <screen x="0" y="23" width="1680" height="976" />
     </state>

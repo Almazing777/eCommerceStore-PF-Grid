@@ -20,6 +20,18 @@ public class BaseTest {
     @BeforeMethod
     public void beforeMethodSetup() throws MalformedURLException {
 
+        //SETUP GRID LOCALLY
+//        @BeforeMethod
+//        public void beforeMethodSetup() throws MalformedURLException {
+//            String nodeURL = "http://localhost:4444/";
+//            DesiredCapabilities caps = DesiredCapabilities.firefox();
+//            driver = new RemoteWebDriver(new URL(nodeURL), caps);
+//            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//            wait = new WebDriverWait(driver,4);
+//        }
+//
+
+
         threadDriver = new ThreadLocal<RemoteWebDriver>();
 
         DesiredCapabilities dc = new DesiredCapabilities();
